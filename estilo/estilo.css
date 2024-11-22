@@ -1,0 +1,27 @@
+
+  .content {
+    display: none;
+  }
+  .content.active {
+    display: block;
+  }
+
+  .d-flex.justify-content-end.mb-4 {
+    background-color: azure;
+    padding: 1%;
+}
+
+  #crearReseña{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:azure;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+#verReseñas h1 {
+  background-color: azure;
+  margin-left: 20%;
+  margin-right:20%;
+  border-radius: 10px;
+}

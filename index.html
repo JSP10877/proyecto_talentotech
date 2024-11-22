@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Reseñas</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body style="background-image: url(img_index/fondo.jpg);">
+  <!-- Navbar con los botones -->
+  <div class="d-flex justify-content-end mb-4">
+    <button id="crearReseñaBtn" class="btn btn-primary me-2">Crear Reseña</button>
+    <button id="verReseñasBtn" class="btn btn-secondary">Ver Reseñas</button>
+  </div>
+
+  <!-- Contenido: Crear Reseña -->
+  <div id="crearReseña" class="content active">
+    <h1 class="text-center mb-4">Cuentanos tu experiencia en el Huila!</h1>
+    <form id="reseñaForm">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" name="correo" required>
+      </div>
+      <div class="mb-3">
+        <label for="foto" class="form-label">Foto (Opcional)</label>
+        <input type="file" class="form-control" id="foto" name="foto" accept="image/*">
+      </div>
+      <div class="mb-3">
+        <label for="comentario" class="form-label">Reseña</label>
+        <textarea class="form-control" id="comentario" name="comentario" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar Reseña</button>
+    </form>
+  </div>
+
+  <!-- Contenido: Ver Reseñas -->
+  <div id="verReseñas" class="content">
+    <h1 class="text-center mb-4">Ver Reseñas</h1>
+    <div id="reseñasContainer" class="container">
+      <!-- Aquí se mostrarán las reseñas -->
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Vincular el archivo JavaScript -->
+  <script src="js/funciones.js"></script>
+</body>
+</html>
+
